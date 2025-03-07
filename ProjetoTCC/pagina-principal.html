@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <style>
+        /* Reset de margens e padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilos do corpo */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Estilos do menu superior */
+        #menuSuperior {
+            height: 15vh;
+            width: 100%;
+            background-color: #007bff;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-transform: uppercase;
+        }
+
+        /* Estilos do quadro central */
+        #quadroCentral {
+            max-width: 100%;
+            width: 60%; /* Ajustado para centralizar com apenas uma imagem */
+            margin: 30px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            background-color: white;
+            padding: 20px;
+        }
+
+        /* Estilo para as imagens no quadro central */
+        #quadroCentral img {
+            height: auto;
+            max-width: 100%; /* Para responsividade */
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Container para o conteúdo abaixo do quadro */
+        .conteudoLateral {
+            display: flex;
+            justify-content: center; /* Ajustado para centralizar */
+            width: 80%;
+            margin: 20px auto;
+            gap: 20px;
+            flex-wrap: wrap; /* Garante responsividade */
+        }
+
+        /* Estilo da ocorrência */
+        #informacoesOcorrencia {
+            width: 100%; /* Ocupa todo o espaço disponível */
+            font-size: 1.1rem;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        /* Efeito hover na ocorrência */
+        #informacoesOcorrencia:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Estilos para o texto dentro da ocorrência */
+        #informacoesOcorrencia p {
+            font-weight: bold;
+            color: #d9534f;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            #menuSuperior {
+                font-size: 1.5rem;
+                padding: 10px 0;
+            }
+
+            /* Ajuste de layout para telas menores */
+            .conteudoLateral {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #informacoesOcorrencia {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            #menuSuperior {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Menu superior -->
+    <div id="menuSuperior">
+        Monitoramento de EPI 
+    </div>
+
+    <!-- Quadro central -->
+    <div id="quadroCentral">
+        <img src="imgg2.png" alt="Imagem do quadro central">
+    </div>
+
+    <!-- Conteúdo abaixo do quadro central -->
+    <div class="conteudoLateral">
+        <div id="informacoesOcorrencia">
+            <p>Ocorrência: falta do EPI "Máscara"</p>
+        </div>
+    </div>
+</body>
+</html>
